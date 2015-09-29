@@ -3,13 +3,13 @@
 
 <img src="http://ombprojects.com/24x7monitoring.png" width=50% height=50% />
 
-## Description
+### Description
 
 24x7Monitoring is an Open Source Application Performance Monitoring (APM) Framework for J2EE Applications that uses Aspect Oriented Programming to collect Performance metrics about the running JVM and display the data to the user in a tabular/graphical format.
 
 24x7Monitoring does not require any modification to the source code of running application. you just need to add the monitoring agent to your application server classpath and aspectJ Load Time Weaving (LTW) takes care of weaving into your code at runtime and collect the performance metrics.
 
-## Features
+### Features
 
 The Monitoring Agent Collects the following Metrics about the running applications.
 
@@ -26,18 +26,18 @@ Method execution time: classes/packages to be monitored are configurable using r
 
 In Addition to the Metrics mentioned before, the application shall allow the user to configure alerts/notifications and scheduled reports on specific metrics to have the tool sends an alert to the user when the metrics number reaches a pre-defined and configurable threshold. For example: I want the tool to notify me by email when the CPU usage goes beyond 50%.
 
-## Overhead
+### Overhead
 
 Load testing was performed on a sample eCommerce application to measure the overhead of the monitoring framework. For this test, I have enabled **ALL** methods tracing from the application package. this means that it tracks all methods executed in the application ( including getters and setters). the result was an average overhead of ~3% and the higher the response time of a specific page the lower the overhead will be.
 
 <img src="http://ombprojects.com/overhead.jpg" width=50% height=50% />
-## Demo
+### Demo
 
 http://ombprojects.com/24x7monitoring/
 
 Select "Custom Range" from the drop-down and enter: from: 12/01/2013 04:25 pm to: 12/01/2013 05:00 pm Then select a Node from the Tree.
 
-## Installation Steps
+### Installation Steps
 
 1- download monitoring.zip (shared on google drive) and unzip into in your local drive.
 
